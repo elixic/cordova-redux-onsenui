@@ -69,31 +69,16 @@ This will compile and run the ios project in the ios simulator.
 
 ## Learn More
 
+Much of this code was copied from the onsenui kitchen sink sample application, re-written in typescript, and modified to use redux. That project can be found here; [Onsen UI React Kitchen Sink](https://github.com/OnsenUI/react-onsenui-kitchensink)
+
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+To learn Redux, check out the [Redux Getting Started](https://redux.js.org/introduction/getting-started)
 
-To read about how to reduce bundle sizes for web apps: https://webpack.js.org/guides/code-splitting/
-This is probably going to be important if we want to create a pure webapp that can be run on chromebooks.
+To learn more about onsenui, check them out here [Onsenui](https://onsen.io/)
 
-### Analyzing the Bundle Size
+To learn more about cordova, check them out here [Apache Cordova Get Started](https://cordova.apache.org/#getstarted)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To learn more about webkpack, check them out here [Webpack](https://webpack.js.org/)
