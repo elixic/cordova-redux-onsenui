@@ -1,22 +1,16 @@
-This project was set up as a way to experiment with new frameworks.
+This project was set up as a way to experiment with react redux, onsenui, and cordova. It uses webpack to package and build everything. There are some oddities with it building the cordova app, as it messes up the current built webpack project when adding the platforms, but there are steps to get around this.
 
-## Getting Started
+Note: The issues may stem from the fact that we're using yarn and cordofa-fetch doesn't seem to have a way to use that and thus the yarn.lock and package-log.json have colisions.
+
+## Project info
 
 ### dependencies
 
-You will need yarn, node v >= 8, and cordova v >= 8 installed globally.
+You will need node v >= 8, and cordova v >= 8 installed globally.
 
 ### `yarn global add cordova`
 
-If you do not have cordova installed globally, run this command to install it.
-
-### `yarn install`
-
-Run this command from the root of the project
-
-## Available Scripts
-
-In the project directory, you can run:
+If you did not have cordova installed globally, this command will install it.
 
 ### `yarn start`
 
@@ -32,7 +26,7 @@ This runs webpack with the development flag.
 
 ### `yarn build:prod`
 
-This builds the production bundle, while for now it simply sets the webpack mode for production when we get cordova working it should produce bundles for that as well.
+This builds the production bundle, which excludes the redux-logger from the mixins when initilizing the store. (See below to learn more about redux.)
 
 ## `building and running the cordova app with the ios emulator`
 
@@ -49,7 +43,7 @@ Creates the www directory, copies the index.html from public/index.html into it,
 ### `cordova platform add ios`
 
 Creates the platforms and plugins directories, installs cordova and other dependencies in the platforms directory, and creates a package-lock.json file.
-NOTE: This step fucks up some of our other dependencies and installed modules, requiring us to remove the package-lock.json and run some of our earlier steps over again.
+NOTE: This step messes up some of our other dependencies and installed modules, requiring us to remove the package-lock.json and run some of our earlier steps over again.
 
 ### `rm package-lock.json`
 
