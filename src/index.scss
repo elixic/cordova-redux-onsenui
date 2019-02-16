@@ -1,0 +1,14 @@
+// Abstracts 
+@import "./styles/abstracts/index";
+
+// Base Styles 
+@import "./styles/base/index";
+
+// Component Styles
+// TODO: decide is component styles should live with react-components.
+// TODO: decide if we should use scss modules
+
+// Vender styles 
+// NOTE: '~' is a shortcut that refers to node_modules
+@import "~onsenui/css/onsenui.css"; 
+@import "~onsenui/css/onsen-css-components.css";

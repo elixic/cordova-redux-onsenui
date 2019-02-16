@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "pretty": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "esnext.asynciterable"
+    ]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules",
+    "www",
+    "platforms",
+    "plugins"
+  ],
+  "atom": {
+    "formatOnSave": false
+  }
+}
