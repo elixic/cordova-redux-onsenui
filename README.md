@@ -67,18 +67,20 @@ The project needs to be re-built now with the fixed node_modules
 
 This will compile and run the ios project in the ios simulator.
 
-## Learn More
+## Some resources used to create this project
 
 Much of this code was copied from the onsenui kitchen sink sample application, re-written in typescript, and modified to use redux. That project can be found here; [Onsen UI React Kitchen Sink](https://github.com/OnsenUI/react-onsenui-kitchensink)
 
+The initial project creations was done using the Create React App.
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+The cordova portions of this project were created using this guide and then copying the pieces needed into the onsenui/react app.
+To learn more about cordova, check them out here [Apache Cordova Get Started](https://cordova.apache.org/#getstarted)
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 To learn Redux, check out the [Redux Getting Started](https://redux.js.org/introduction/getting-started)
 
 To learn more about onsenui, check them out here [Onsenui](https://onsen.io/)
-
-To learn more about cordova, check them out here [Apache Cordova Get Started](https://cordova.apache.org/#getstarted)
 
 To learn more about webkpack, check them out here [Webpack](https://webpack.js.org/)
