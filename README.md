@@ -4,7 +4,7 @@ This project was set up as a way to experiment with new frameworks.
 
 ### dependencies
 
-You will need yarn, node v >= 8, cordova v >= 8 installed globally.
+You will need yarn, node v >= 8, and cordova v >= 8 installed globally.
 
 ### 'yarn global add cordova'
 
