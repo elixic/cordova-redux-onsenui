@@ -8,7 +8,7 @@ You will need yarn, node v >= 8, and cordova v >= 8 installed globally.
 
 ### 'yarn global add cordova'
 
-If you do not have cordova install globally, run this command to install it.
+If you do not have cordova installed globally, run this command to install it.
 
 ### 'yarn install'
 
