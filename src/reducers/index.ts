@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import sideMenu from './sideMenu';
+import network from './networkStatus';
 
 /**
  * when combining reducers, this will make sure to only pass the sideMenu portion of the state to the sideMenu reducer. So, when looking at the
@@ -7,6 +8,7 @@ import sideMenu from './sideMenu';
  */
 const rootReducer = combineReducers({
   sideMenu,
+  network,
 });
 
 export default rootReducer;
