@@ -3016,6 +3016,11 @@ cordova-ios@^5.0.0:
     xcode "^2.0.0"
     xml-escape "^1.1.0"
 
+cordova-plugin-network-information@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-network-information/-/cordova-plugin-network-information-2.0.1.tgz#e90421f430c6ab76d409223f25fcefbbbce17690"
+  integrity sha1-6QQh9DDGq3bUCSI/Jfzvu7zhdpA=
+
 cordova-plugin-webpack@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/cordova-plugin-webpack/-/cordova-plugin-webpack-0.0.2.tgz#fdec7eb39da698ef5b8020ed23564b650c7e7064"
