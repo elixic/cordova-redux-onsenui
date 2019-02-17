@@ -24,7 +24,9 @@ export interface ISideMenuStateProps {
   width: number;
 }
 
-export interface ISideMenuProps extends ISideMenuDispatchProps, ISideMenuStateProps {}
+export interface ISideMenuProps extends ISideMenuDispatchProps, ISideMenuStateProps {
+  children: any;
+}
 
 const renderToolbar = (handleOpen: () => void) => (
   <Toolbar handleClick={handleOpen} />
@@ -36,7 +38,7 @@ const renderRow = (row: number) => (
   </ListItem>
 );
 
-const SideMenu = ({isOpen, width, handleClose, handleOpen}: ISideMenuProps) => (
+const SideMenu = ({isOpen, width, handleClose, handleOpen, children }: ISideMenuProps) => (
   <Page>
     <Splitter>
       <SplitterSide
@@ -65,6 +67,7 @@ const SideMenu = ({isOpen, width, handleClose, handleOpen}: ISideMenuProps) => (
             <li>{`isOpen: ${isOpen}`}</li>
             <li>{`width: ${width}`}</li>
           </ul>
+          { children }
         </Page>
       </SplitterContent>
     </Splitter>
@@ -76,6 +79,7 @@ SideMenu.propTypes = {
   width: PropTypes.number.isRequired,
   handleClose: PropTypes.func.isRequired,
   handleOpen: PropTypes.func.isRequired,
+  children: PropTypes.object,
 };
 
 export default SideMenu;

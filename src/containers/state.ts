@@ -9,6 +9,11 @@ export interface ISideMenuState {
   width: number;
 }
 
+export interface INetworkStatus {
+  isConnected: boolean;
+}
+
 export interface IAppState {
   sideMenu: ISideMenuState;
+  network: INetworkStatus;
 }
