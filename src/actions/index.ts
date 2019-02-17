@@ -30,6 +30,10 @@ export interface INetworkStatusAction extends Action {
   isConnected: boolean;
 }
 
+/**
+ * Call this when the network state changes.
+ * @param isConnected 
+ */
 export function networkStateChange(isConnected: boolean): INetworkStatusAction {
   return {
     type: NETWORK_STATE_CHANGE,

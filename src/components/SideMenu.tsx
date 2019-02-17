@@ -14,6 +14,12 @@ import {
 
 import Toolbar from './SideMenuToolbar';
 
+/**
+ * We break the side menu props into pieces so we can ensure we are mapping state to the proper values
+ * in our containers. This lets us make sure the props that are being returned by the mapStateToProps and
+ * mapDispatchToProps methods are the appropriate type.
+ */
+
 export interface ISideMenuDispatchProps {
   handleClose: () => void;
   handleOpen: () => void;
@@ -24,8 +30,12 @@ export interface ISideMenuStateProps {
   width: number;
 }
 
+/**
+ * I'm not sure the best way to handle children here. Should the type here be an object? The children
+ * should be the child nodes of the SideMenu element, if there are any.
+ */
 export interface ISideMenuProps extends ISideMenuDispatchProps, ISideMenuStateProps {
-  children: any;
+  children: object;
 }
 
 const renderToolbar = (handleOpen: () => void) => (
